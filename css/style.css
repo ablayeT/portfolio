@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+    /*hearder*/
+
+
+.header-block{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    background: rgb(50, 48, 48);
+    color: white;
+
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    margin-right: 15rem; 
+}
+.contact{
+  width  : 0;
+  height : 0;
+  border-left   : 25px solid transparent;
+  border-right  : 25px solid transparent;
+  border-bottom : 50px solid green;
+}
+ul>li {
+    margin: 10px;
+}
+main{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+.presentation{
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width:450px){
+    .header-block{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+    .contact{
+        display: flex;
+       justify-content: center;
+        margin: auto;
+        width: 100%;
+    }
+    .navBar{
+        display: flex;
+        margin: auto;
+        border-top: 1px solid white;
+        width: 100%;
+    }
+    ul>li{
+        margin: 10px;
+    }
+}
+    
