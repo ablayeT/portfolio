@@ -1,74 +1,195 @@
 *{
-    box-sizing: border-box;
+     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-size: 62.5%;
-}
+    
+} 
+
 
 body{
-  margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "Montserrat", sans-serif;
+   
+}
+h1{
+    font-size: 2.6rem;
+}
+h2{
+    font-size: 4.8rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4,h5{
+    font-size: 2.8rem;
+}
+li {
+    font-size: 2rem;
+}
+a{
+    color: white;
+    
 }
 
     /*hearder*/
 
-
 .header-block{
+    background: rgb(3, 44, 3);
+    color: white;
+    width: 100%;
+}
+nav{
+min-height: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+margin: auto;
+padding: 2rem;
+}
+nav ul {
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
-    background: rgb(50, 48, 48);
-    color: white;
-
-}
-
-ul{
-    display: flex;
+    gap: 12px;
+    align-items: center;
     list-style: none;
-    margin-right: 15rem; 
 }
-.contact{
-  width  : 0;
-  height : 0;
-  border-left   : 25px solid transparent;
-  border-right  : 25px solid transparent;
-  border-bottom : 50px solid green;
+nav ul li a:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+     transition: width 2s, height 2s, transform 2s;
+      
 }
-ul>li {
-    margin: 10px;
+nav > ul > li > a{
+    list-style-type: none;
 }
+#logo{
+    
+}
+
+  /*Main*/
+
 main{
     background: black;
-    color: white;
     padding: 20px;
+    height: 600px;
+    display: flex;
+    
 }
 .presentation{
     display: flex;
     justify-content: space-around;
+     color: white;
+     align-items: center;
+     width: 80%;
+     margin: auto;
+     
 }
-@media only screen and (max-width:450px){
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+      
+}
+figure {
+    width: 80%;
+}
+
+figure > img{
+    width: 100%;
+      border: 1px solid transparent;
+     border-radius: 70%;
+   
+}
+
+/*footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background: rgb(3, 44, 3);
+    color: white;
+}
+.media{
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    font-size: 2rem;
+}
+.fa-linkedin{
+    color: rgb(17, 142, 238);
+}
+.fa-square-instagram{
+    color: rgb(228, 64, 95);
+}
+.fa-square-facebook{
+    color: rgb(17, 142, 238);
+}
+.fa-twitter{
+    color: rgb(0, 102, 255);
+}
+
+@media only screen and (max-width:700px){
+    h2{
+        font-size: 4rem;
+    }
+
     .header-block{
+        width: 100%;
+        height: 20%;
+    
+    }
+  nav{
         display: flex;
         flex-direction: column;
        align-items: center;
-       width: 100%;
+       justify-content: space-between;
+       gap: 30px;
+       width:100%;
     }
-    .contact{
+
+    #logo{
+        height: 10px;
+    }
+
+    .nav ul{
+       display: flex;
+       flex-direction: column; 
+       gap: px;
+       margin: 5px;
+       padding: 5px;
+        }
+    nav> ul > li {
+        font-size: 1.8rem;
+
+    }
+    /*main*/ 
+
+    .presentation{
         display: flex;
-       justify-content: center;
-        margin: auto;
-        width: 100%;
+        flex-direction: column-reverse;
     }
-    .navBar{
-        display: flex;
-        margin: auto;
-        border-top: 1px solid white;
-        width: 100%;
+    aside{
+        text-align: center;
     }
-    ul>li{
-        margin: 10px;
+
+    figure {
+        width:100%;
+    }
+    figure img {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin: auto;
     }
 }
     
